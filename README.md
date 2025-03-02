@@ -1,2 +1,2 @@
-# deizeofficial
+# deizenofficial
 Официальный сайт Дайзена
