@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ДАЙЗЕН</title>
+    <style>
+        /* Общие стили */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #FFA500;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            position: relative;
+            min-height: 100vh; /* Гарантирует минимальную высоту страницы */
+            overflow-x: hidden; /* Скрывает горизонтальный скролл */
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 50px auto; /* Уменьшил отступ сверху для лучшего вида */
+            padding: 20px;
+            position: relative;
+            z-index: 2; /* Устанавливаем z-index для контейнера, чтобы он был выше дыма */
+        }
+        
+        h1 {
+            font-size: 48px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px; /* Добавил отступ снизу */
+        }
+
+        h2 {
+            font-size: 30px;
+            margin-top: 20px; /* Добавил отступ сверху */
+            margin-bottom: 10px; /* Добавил отступ снизу */
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #ddd;
+        }
+
+        /* Ссылки */
+        .links {
+            margin-top: 20px;
+        }
+
+        .links a {
+            display: inline-block;
+            margin: 15px;
+            padding: 15px 30px;
+            font-size: 20px;
+            color: #000;
+            background-color: #FFA500;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 10px;
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+            border: 2px solid transparent; /* Добавляем эффект рамки */
+        }
+
+        .links a:hover {
+            background-color: #ff8c00;
+            transform: scale(1.1);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Добавляем тень при наведении */
+            border-color: #000; /* Добавляем рамку при наведении */
+        }
+
+        /* Статичный дым */
+        .smoke {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 115%;
+            height: 100%;
+            background-image: url('https://i.gifer.com/EkA5.gif');
+            background-size: cover; /* Растягиваем изображение на весь экран */
+            z-index: 1; /* Убираем дым под контент */
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Элемент с дымом (статичный) -->
+    <div class="smoke"></div>
+
+    <div class="container">
+        <h1>ДАЙЗЕН</h1>
+        <h2>Описание</h2>
+        <p>Привет! Это мой официальный сайт. В нем вы можете ознакомиться с моей биографией, а так же с моей компанией и деятельностью!</p>
+
+        <!-- Второй заголовок и соц.сети -->
+        <h2>Мои соц.сети</h2>
+        <div class="links">
+            <a href="https://t.me/De1zenChannel" target="_blank">Telegram</a>
+            <a href="https://youtube.com/@de1zen_so2?si=z_fCimDhPxcYd5b3" target="_blank">Youtube</a>
+            <a href="https://www.tiktok.com/@de1zen?_t=8jOI2cCpVuH&_r=1" target="_blank">TikTok</a>
+        </div>
+
+        <!-- Третий заголовок -->
+        <h2>О Дайзене</h2>
+        <p>Дайзен - 18 лет, с 11 лет играет в Standoff и на этом введет свой Тик Ток и ютуб. Псевдоним "Дайзен" пошло от его настоящего имени. 
+        На 2.03.2025 Дайзен имеет 2.000 Подписчиков на канале и не собирается останавливатся.
+        </p>
+    </div>
+</body>
+</html>
